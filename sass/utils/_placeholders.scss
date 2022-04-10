@@ -1,0 +1,20 @@
+%list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+%img {
+    display: block;
+}

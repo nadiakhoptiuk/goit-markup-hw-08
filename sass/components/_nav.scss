@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    @extend %list;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $primaryTextColor;
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.nav__link--current {
+    position: relative;
+    color: $accentColor;
+
+    &::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    content: '';
+    border-radius: 2px;
+    background-color: $accentColor;
+    }
+}

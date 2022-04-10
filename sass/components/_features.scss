@@ -1,0 +1,51 @@
+.features-section {
+    @extend %section;
+}
+
+.features {
+    display: flex;
+
+    @extend %list;
+}
+
+.features-section__title {
+    @extend %visually-hidden;
+}
+
+.features__item {
+    width: calc((100% - 30px * 3) / 4);
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.features__wrap {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    @include centeredFlex;
+
+    border-radius: $borderRadius;
+    background-color: $specialBgdColor;
+}
+
+.features__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features__desc {
+    line-height: 1.71;
+    color: $secondaryTextColor;
+}

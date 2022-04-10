@@ -1,0 +1,33 @@
+.contacts {
+    margin-left: auto;
+    display: flex;
+    @extend %list;
+}
+
+.contacts__item:last-child {
+    margin-left: 30px;
+}
+
+.contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $secondaryTextColor;
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+    color: $accentColor;
+    }
+}
+
+.contacts__icon--smartphone,
+.contacts__icon--letter {
+    margin-right: 10px;
+    fill: currentColor;
+}
