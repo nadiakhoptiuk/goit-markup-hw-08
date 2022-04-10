@@ -1,0 +1,20 @@
+.menu-btn {
+    margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include centeredFlex;
+}
+
+
+.menu-icon {
+    fill: $textColorLogoHeader;
+    @include transitioned(fill);
+
+    .menu-btn:hover &,
+    .menu-btn:focus & {
+        fill: $accentColor;
+    }
+}

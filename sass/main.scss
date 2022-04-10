@@ -3,8 +3,11 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 
-@import "./components/page";
+@import "./base/page";
+@import "./base/container";
+
 @import "./components/header";
+@import "./components/menu";
 @import "./components/commons/logo";
 @import "./components/nav";
 @import "./components/contacts";

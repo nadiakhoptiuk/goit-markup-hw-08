@@ -26,7 +26,7 @@
                 <a href="./index.html" class="logo header__logo"><span class="logo__part">Web</span>Studio</a>
             
                 <!-- Navigation list -->
-                <ul class="nav">
+                <ul class="nav" hidden>
                     <li class="nav__item">
                         <a href="./index.html" class="nav__link nav__link--current">Студия</a>
                     </li>
@@ -42,7 +42,7 @@
             </nav>
             
             <!-- Contact us -->
-            <ul class="contacts">
+            <ul class="contacts" hidden>
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
                         <svg class="contacts__icon contacts__icon--letter" width="16" height="12">
@@ -60,6 +60,13 @@
                     </a>
                 </li>
             </ul>
+
+            <button class="menu-btn" type="button">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu-btn"></use>
+                    <use href="./images/icons.svg#close-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
