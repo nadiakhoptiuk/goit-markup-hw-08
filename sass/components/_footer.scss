@@ -1,0 +1,4 @@
+.footer {
+    @extend %section;
+    background-color: $secondaryBgdColor;
+}

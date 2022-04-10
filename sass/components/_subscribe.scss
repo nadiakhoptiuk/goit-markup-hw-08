@@ -1,0 +1,50 @@
+
+
+.subscribe__appeal {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $lightTextColor;
+}
+
+.subcribe__form {
+    @include centeredFlex;
+    flex-wrap: wrap;
+}
+
+.subscribe__input {
+    display: block;
+    width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: inherit;
+    color: $contactsTextColorFooter;
+    
+    background-color: transparent;
+    border-radius: $borderRadius;
+    border-width: 1px;
+    border-color: $footerInputBorderColor;
+    
+    @include transitioned(border-color);
+    
+    &:focus {
+        border-color: $accentColor;
+        outline: none;
+    }
+    
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: inherit;
+        color: $contactsTextColorFooter;
+    }
+}

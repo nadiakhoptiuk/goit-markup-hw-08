@@ -12,3 +12,11 @@
 .logo__part {
     color: $accentColor;
 }
+
+// footer logo
+.footer__logo {
+    display: inline-block;
+    color: $lightTextColor;
+
+    margin-bottom: 20px;
+}

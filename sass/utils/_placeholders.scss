@@ -9,3 +9,14 @@
     position: fixed;
     transform: scale(0);
 }
+
+%section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+%section-title {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+}

@@ -1,2 +1,31 @@
+.address-wrapper {
+    text-align: center;
+    width: 100%;
 
+    margin-bottom: 60px;
+}
 
+.address {
+    @extend %list;
+    font-style: normal;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.address__link {
+    line-height: 1.71;
+    color: $contactsTextColorFooter;
+
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.address__link--physical {
+    color: $lightTextColor;
+}
