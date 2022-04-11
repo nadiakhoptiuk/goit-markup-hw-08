@@ -21,12 +21,6 @@
   }
 }
 
-.form__label--accept {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .form__icon {
   position: absolute;
   left: 16px;
@@ -116,6 +110,7 @@
 
 .form__label--accept {
   position: relative;
+  width: 100%;
 
   @media screen and (max-width: 1199px) {
     display: flex;

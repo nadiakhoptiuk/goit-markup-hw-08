@@ -891,12 +891,6 @@ img {
   cursor: pointer;
 }
 
-.form__label--accept {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 .form__icon {
   position: absolute;
   left: 16px;
@@ -985,6 +979,7 @@ img {
 
 .form__label--accept {
   position: relative;
+  width: 100%;
   color: #757575;
 }
 
