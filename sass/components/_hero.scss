@@ -1,4 +1,5 @@
 .hero-section {
+    width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -7,8 +8,10 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-hero-mobile.jpg');
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+
+    flex-grow: 1;
 }
 
 .hero__title {

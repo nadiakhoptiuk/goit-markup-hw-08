@@ -307,7 +307,13 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -374,13 +380,15 @@ img {
 }
 
 .hero-section {
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero-mobile.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  flex-grow: 1;
 }
 
 .hero__title {
@@ -396,6 +404,9 @@ img {
 .button {
   min-width: 200px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -472,7 +483,8 @@ img {
 }
 
 .members__info {
-  padding: 30px 122px 24px 122px;
+  padding-top: 30px;
+  padding-bottom: 24px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -543,8 +555,7 @@ img {
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: -15px;
 }
 
 .clients__item {
@@ -560,7 +571,7 @@ img {
 
 .clients__icon {
   display: block;
-  width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -665,6 +676,11 @@ img {
   line-height: 1.25;
   letter-spacing: inherit;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: #ffffff;
 }
 
 /* Styles for visible backdrop */
