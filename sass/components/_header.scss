@@ -1,6 +1,37 @@
+.header {
+  position: relative;
+}
+
 .header__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mobile-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  @extend %list;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.nav__item {
+  margin-bottom: 32px;
+  color: $primaryTextColor;
+
+  &:hover,
+  &:focus {
+    margin-bottom: 36px;
+    color: $accentColor;
+  }
+}
+
+.contacts {
+  @extend %list;
 }
