@@ -1,49 +1,56 @@
 .team-section {
-    @extend %section;
-
-    background-color: $specialBgdColor;
+  @extend %section;
+  background-color: $specialBgdColor;
 }
 
 .team-section__title {
-    @extend %section-title;
-    margin-bottom: 30px;
+  @extend %section-title;
 }
 
+// members list
 .members {
-    @extend %list;
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .members__item {
-    background-color: $primaryBgdColor;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
+  margin: 15px;
+
+  background-color: $primaryBgdColor;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px - 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px - 30px) / 4);
+  }
 }
 
 .members__photo {
-    width: 100%;
+  width: 100%;
 }
 
 .members__info {
-    padding-top: 30px;
-    padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .members__name {
-    margin-bottom: 10px;
-    font-weight: 500;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .members__proffession {
-    margin-bottom: 16px;
-    color: $secondaryTextColor;
+  margin-bottom: 16px;
+  color: $secondaryTextColor;
 }

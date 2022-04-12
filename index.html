@@ -469,78 +469,84 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="address-wrapper">
-          <!-- Logotype -->
-          <a href="./index.html" class="logo footer__logo"
-            ><span class="logo__part">Web</span>Studio</a
-          >
+        <div class="tablet-wrapper">
+          <div class="address-wrapper">
+            <!-- Logotype -->
+            <a href="./index.html" class="logo footer__logo"
+              ><span class="logo__part">Web</span>Studio</a
+            >
 
-          <!-- Address and contacts -->
-          <address>
-            <ul class="address">
-              <li class="address__item">
-                <a href="" class="address__link address__link--physical"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+            <!-- Address and contacts -->
+            <address>
+              <ul class="address list">
+                <li class="address__item">
+                  <a href="" class="address__link address__link--physical"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <p class="join__appeal">присоединяйтесь</p>
+
+            <ul class="socials list">
+              <li class="socials__item">
+                <a
+                  href=""
+                  aria-label="Ссылка на Instagram"
+                  class="socials__link socials__link--footer"
                 >
+                  <svg class="socials__icon socials__icon--footer">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  aria-label="Ссылка на Twitter"
+                  class="socials__link socials__link--footer"
+                >
+                  <svg class="socials__icon socials__icon--footer">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  aria-label="Ссылка на Facebook"
+                  class="socials__link socials__link--footer"
+                >
+                  <svg class="socials__icon socials__icon--footer">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  aria-label="Ссылка на LinkedIn"
+                  class="socials__link socials__link--footer"
+                >
+                  <svg class="socials__icon socials__icon--footer">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join">
-          <p class="join__appeal">присоединяйтесь</p>
-
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                href=""
-                aria-label="Ссылка на Instagram"
-                class="socials__link socials__link--footer"
-              >
-                <svg class="socials__icon socials__icon--footer">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a href="" aria-label="Ссылка на Twitter" class="socials__link socials__link--footer">
-                <svg class="socials__icon socials__icon--footer">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a
-                href=""
-                aria-label="Ссылка на Facebook"
-                class="socials__link socials__link--footer"
-              >
-                <svg class="socials__icon socials__icon--footer">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a
-                href=""
-                aria-label="Ссылка на LinkedIn"
-                class="socials__link socials__link--footer"
-              >
-                <svg class="socials__icon socials__icon--footer">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="subscribe">
@@ -608,7 +614,7 @@
             </span>
           </label>
 
-          <label class="form__field form__field--comment">
+          <label class="form__field--comment">
             <span class="form__label">Комментарий</span>
             <textarea
               class="form__comment"

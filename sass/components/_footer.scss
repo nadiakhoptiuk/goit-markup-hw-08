@@ -1,4 +1,18 @@
 .footer {
-    @extend %section;
-    background-color: $secondaryBgdColor;
+  @extend %section;
+  background-color: $secondaryBgdColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .footer__container {
+    padding-left: 61px;
+    padding-right: 84px;
+  }
 }

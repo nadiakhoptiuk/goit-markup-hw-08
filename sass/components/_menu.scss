@@ -41,15 +41,8 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu-btn,
-  .menu-icon {
-    display: none;
-  }
-}
-
 .menu-container {
-  //   display: none;
+  display: none;
   //   position: absolute;
   //   top: 0;
   //   left: 0;
@@ -61,6 +54,13 @@
 
   .menu-btn--is-open & {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn,
+  .menu-icon {
+    display: none;
   }
 }
 

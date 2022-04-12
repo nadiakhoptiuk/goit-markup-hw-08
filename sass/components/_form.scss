@@ -75,7 +75,7 @@
   position: relative;
 }
 
-.form__field-comment {
+.form__field--comment {
   display: block;
   margin-bottom: 20px;
 }
@@ -111,17 +111,14 @@
 .form__label--accept {
   position: relative;
   width: 100%;
+  @include centeredFlex;
 
   @media screen and (max-width: 1199px) {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     font-size: 12px;
     line-height: 1.17;
   }
 
   @media screen and (min-width: 1200px) {
-    @include centeredFlex(inline-flex);
     font-size: 14px;
     line-height: 1.71;
   }
