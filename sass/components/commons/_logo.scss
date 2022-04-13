@@ -1,22 +1,27 @@
 .logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
-    color: $textColorLogoHeader;
+  color: $textColorLogoHeader;
 }
 
 .logo__part {
-    color: $accentColor;
+  color: $accentColor;
 }
 
 // footer logo
 .footer__logo {
-    display: inline-block;
-    color: $lightTextColor;
+  display: inline-block;
+  color: $lightTextColor;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

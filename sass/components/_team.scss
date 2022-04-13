@@ -27,7 +27,7 @@
     width: calc((100% - 30px - 30px) / 2);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * 30px - 30px) / 4);
   }
 }
@@ -40,17 +40,19 @@
   padding-top: 30px;
   padding-bottom: 24px;
 
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
 }
 
 .members__name {
   margin-bottom: 10px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .members__proffession {
+  font-size: 16px;
+  line-height: 1.19;
   margin-bottom: 16px;
   color: $secondaryTextColor;
 }

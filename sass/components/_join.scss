@@ -1,15 +1,20 @@
 .join {
-    margin-bottom: 60px;
-    text-align: center;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .join__appeal {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    // font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: $lightTextColor;
+  font-weight: 700;
+  // font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $lightTextColor;
 }

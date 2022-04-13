@@ -1,7 +1,49 @@
 .work-section {
   @extend %section;
+  padding-top: 0;
 
   @media screen and (max-width: 1199px) {
     display: none;
   }
+}
+
+.work-section__title {
+  @extend %section-title;
+}
+
+.work {
+  @extend %list;
+
+  display: flex;
+}
+
+.work__item {
+  width: calc((100% - 30px * 2) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work__wrap {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.work__category {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  padding: 27px 82px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $lightTextColor;
+  background-color: $workOverlayBgdColor;
 }

@@ -6,6 +6,11 @@
     margin: 0 auto;
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
 }
 
 .address {
@@ -15,6 +20,10 @@
 
 .address__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {

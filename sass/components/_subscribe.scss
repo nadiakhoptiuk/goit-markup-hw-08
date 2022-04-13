@@ -1,3 +1,9 @@
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
 .subscribe__appeal {
   display: block;
   margin-bottom: 20px;
@@ -8,11 +14,21 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $lightTextColor;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subcribe__form {
   @include centeredFlex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
 .subscribe__input {
@@ -32,8 +48,10 @@
   border-width: 1px;
   border-color: $footerInputBorderColor;
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 
   @include transitioned(border-color);

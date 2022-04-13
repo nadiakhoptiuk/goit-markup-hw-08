@@ -1,5 +1,6 @@
 .footer {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $secondaryBgdColor;
 }
 
@@ -14,5 +15,13 @@
   .footer__container {
     padding-left: 61px;
     padding-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-wrapper,
+  .footer__container {
+    display: flex;
+    align-items: baseline;
   }
 }

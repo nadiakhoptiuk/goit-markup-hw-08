@@ -10,10 +10,8 @@
     @include centeredFlex;
   }
 
-  .menu-icon {
-    width: 40px;
-    height: 40px;
-
+  .icon--cross,
+  .icon--menu {
     fill: $textColorLogoHeader;
 
     @include transitioned(fill);
@@ -23,61 +21,67 @@
       fill: $accentColor;
     }
   }
+}
 
-  .icon--cross {
+.menu-btn .icon--menu {
+  display: block;
+}
+
+.menu-btn.is-open {
+  & .icon--menu {
     display: none;
-
-    .menu-btn--is-open & {
-      display: block;
-    }
   }
 
-  .icon--menu {
+  & .icon--cross {
     display: block;
-
-    .menu-btn--is-open & {
-      display: none;
-    }
   }
 }
 
 .menu-container {
   display: none;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 48px 40px;
 
-  background-color: $primaryBgdColor;
-
-  .menu-btn--is-open & {
+  &.is-open {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+
+    background-color: $primaryBgdColor;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu-btn,
-  .menu-icon {
+.nav--menu {
+  display: flex;
+
+  @extend %list;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav--full {
     display: none;
   }
 }
 
-.company-socials {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
+// @media screen and (min-width: 768px) {
+//   .menu-btn,
+//   .menu-icon {
+//     display: none;
+//   }
+// }
 
-  @extend %list;
+// .company-socials {
+//   display: flex;
+//   align-items: center;
+//   margin-top: auto;
 
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accentColor;
-}
+//   @extend %list;
 
-.company-socials__item:not(:last-child) {
-  margin-right: 20px;
-}
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 1.22;
+//   letter-spacing: 0.02em;
+//   color: $accentColor;
+// }
