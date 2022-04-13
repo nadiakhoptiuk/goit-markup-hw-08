@@ -30,6 +30,7 @@ img {
   color: $primaryTextColor;
 }
 
-.page.modal-open {
+.page.modal-open,
+.page.menu-open {
   overflow: hidden;
 }

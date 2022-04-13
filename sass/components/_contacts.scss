@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contacts__item:not(:first-child) {
+  margin-bottom: 32px;
+}
+
+.contacts__link--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accentColor;
+}
+
+.contacts__link--email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.contacts__icon {
+  display: none;
+}

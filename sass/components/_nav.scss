@@ -1,4 +1,27 @@
 .nav {
-  display: flex;
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  color: $primaryTextColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
 }

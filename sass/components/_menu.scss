@@ -1,87 +1,81 @@
-@media screen and (max-width: 767px) {
-  .menu-btn {
-    margin-left: auto;
-    padding: 0;
+.header__container {
+  display: flex;
+  align-items: center;
+}
 
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.menu-btn {
+  margin-left: auto;
+  padding: 0;
 
-    @include centeredFlex;
-  }
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
-  .icon--cross,
-  .icon--menu {
-    fill: $textColorLogoHeader;
+  @include centeredFlex;
 
-    @include transitioned(fill);
-
-    .menu-btn:hover &,
-    .menu-btn:focus & {
-      fill: $accentColor;
-    }
+  &.is-open {
+    position: absolute;
+    z-index: 2;
+    right: 15px;
+    top: 15px;
   }
 }
 
-.menu-btn .icon--menu {
-  display: block;
-}
+.menu-btn__icon--cross {
+  display: none;
 
-.menu-btn.is-open {
-  & .icon--menu {
-    display: none;
-  }
-
-  & .icon--cross {
+  .menu-btn.is-open & {
     display: block;
+  }
+}
+
+.menu-btn.is-open .menu-btn__icon--menu {
+  display: none;
+}
+
+.menu-btn__icon--cross,
+.menu-btn__icon--menu {
+  fill: $textColorLogoHeader;
+
+  @include transitioned(fill);
+
+  .menu-btn:hover &,
+  .menu-btn:focus & {
+    fill: $accentColor;
   }
 }
 
 .menu-container {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+
+  background-color: $primaryBgdColor;
+  padding: 37px 37px;
 
   &.is-open {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 48px 40px;
-
-    background-color: $primaryBgdColor;
   }
 }
 
-.nav--menu {
+// company socials
+.company-socials {
   display: flex;
+  margin-top: 64px;
 
   @extend %list;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accentColor;
 }
 
-@media screen and (max-width: 767px) {
-  .main-nav--full {
-    display: none;
-  }
+.company-socials__item:not(:last-child) {
+  margin-right: 20px;
 }
-
-// @media screen and (min-width: 768px) {
-//   .menu-btn,
-//   .menu-icon {
-//     display: none;
-//   }
-// }
-
-// .company-socials {
-//   display: flex;
-//   align-items: center;
-//   margin-top: auto;
-
-//   @extend %list;
-
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.22;
-//   letter-spacing: 0.02em;
-//   color: $accentColor;
-// }
