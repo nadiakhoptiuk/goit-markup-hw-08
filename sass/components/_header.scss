@@ -1,10 +1,13 @@
 .header {
   position: relative;
+  border-bottom: 1px solid $primaryBorderColor;
 }
 
 .header__container {
   padding-top: 16px;
   padding-bottom: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-header-container {
