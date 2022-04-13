@@ -483,14 +483,15 @@ img {
 
 .hero-section {
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-grow: 1;
 }
 
 @media screen and (min-width: 1200px) {
