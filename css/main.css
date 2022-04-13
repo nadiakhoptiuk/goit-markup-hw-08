@@ -322,6 +322,10 @@ img {
   color: #212121;
 }
 
+.page.modal-open {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 15px;

@@ -29,3 +29,7 @@ img {
   background-color: $primaryBgdColor;
   color: $primaryTextColor;
 }
+
+.page.modal-open {
+  overflow: hidden;
+}
