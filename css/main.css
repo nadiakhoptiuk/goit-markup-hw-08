@@ -315,6 +315,7 @@ img {
 }
 
 .page {
+  padding-top: 72px;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -358,8 +359,13 @@ img {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 .header__container {
