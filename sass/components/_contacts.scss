@@ -76,6 +76,21 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
   .contacts__link {
     display: flex;
     padding-top: 32px;
