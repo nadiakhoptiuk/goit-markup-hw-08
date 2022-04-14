@@ -1,28 +1,98 @@
-.contacts {
-  display: flex;
-  flex-direction: column-reverse;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+
+  .contacts__link--tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $accentColor;
+  }
+
+  .contacts__link--email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $secondaryTextColor;
+  }
+
+  .contacts__icon {
+    display: none;
+  }
 }
 
-.contacts__item:not(:first-child) {
-  margin-bottom: 32px;
+@media screen and (min-width: 768px) {
+  .contacts-wrap {
+    align-self: center;
+    margin-left: auto;
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .contacts__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: $secondaryTextColor;
+    @include transitioned(color);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  .contacts__icon {
+    margin-right: 8px;
+    fill: currentColor;
+
+    &--letter {
+      width: 14px;
+      height: 10px;
+    }
+
+    &--smartphone {
+      width: 10px;
+      height: 14px;
+    }
+  }
 }
 
-.contacts__link--tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: $accentColor;
-}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
-.contacts__link--email {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: $secondaryTextColor;
-}
+  .contacts__icon {
+    margin-right: 10px;
 
-.contacts__icon {
-  display: none;
+    &--letter {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--smartphone {
+      width: 10px;
+      height: 16px;
+    }
+  }
 }
