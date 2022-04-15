@@ -64,7 +64,7 @@
               <li class="contacts__item">
                 <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--email">
                   <svg class="contacts__icon contacts__icon--letter" width="16" height="12">
-                    <use href="./images/sprite.svg#e-mail"></use>
+                    <use href="./images/icons.svg#e-mail"></use>
                   </svg>
                   info@devstudio.com
                 </a>
@@ -72,7 +72,7 @@
               <li class="contacts__item contacts__item--tel">
                 <a href="tel:+380961111111" class="contacts__link contacts__link--tel">
                   <svg class="contacts__icon contacts__icon--smartphone" width="10" height="16">
-                    <use href="./images/sprite.svg#smartphone"></use>
+                    <use href="./images/icons.svg#smartphone"></use>
                   </svg>
                   +38 096 111 11 11
                 </a>
@@ -114,7 +114,7 @@
             <li class="features__item">
               <div class="features__wrap">
                 <svg class="features__icon">
-                  <use href="./images/sprite.svg#attention-for-details"></use>
+                  <use href="./images/icons.svg#attention-for-details"></use>
                 </svg>
               </div>
 
@@ -127,7 +127,7 @@
             <li class="features__item">
               <div class="features__wrap">
                 <svg class="features__icon">
-                  <use href="./images/sprite.svg#punctuality"></use>
+                  <use href="./images/icons.svg#punctuality"></use>
                 </svg>
               </div>
 
@@ -140,7 +140,7 @@
             <li class="features__item">
               <div class="features__wrap">
                 <svg class="features__icon">
-                  <use href="./images/sprite.svg#planning"></use>
+                  <use href="./images/icons.svg#planning"></use>
                 </svg>
               </div>
 
@@ -153,7 +153,7 @@
             <li class="features__item">
               <div class="features__wrap">
                 <svg class="features__icon">
-                  <use href="./images/sprite.svg#modern-technology"></use>
+                  <use href="./images/icons.svg#modern-technology"></use>
                 </svg>
               </div>
 
@@ -174,39 +174,63 @@
           <ul class="work">
             <li class="work__item">
               <div class="work__wrap">
-                <img
-                  class="work__image"
-                  src="./images/img1.jpg"
-                  alt="Илюстрация десктопных приложений"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work-img1-desktop.jpg    1x,
+                      ./images/work-img1-desktop@2x.jpg 2x,
+                      ./images/work-img1-desktop@3x.jpg 3x
+                    "
+                    sizes="33.3333vw"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/work-img1-desktop.jpg"
+                    alt="Илюстрация десктопных приложений"
+                  />
+                </picture>
                 <p class="work__category">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="work__item">
               <div class="work__wrap">
-                <img
-                  class="work__image"
-                  src="./images/img2.jpg"
-                  alt="Илюстрация мобильных приложений"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work-img2-desktop.jpg    1x,
+                      ./images/work-img2-desktop@2x.jpg 2x,
+                      ./images/work-img2-desktop@3x.jpg 3x
+                    "
+                    sizes="33.3333vw"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/work-img2-desktop.jpg"
+                    alt="Илюстрация мобильных приложений"
+                  />
+                </picture>
                 <p class="work__category">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="work__item">
               <div class="work__wrap">
-                <img
-                  class="work__image"
-                  src="./images/img3.jpg"
-                  alt="Илюстрация дизайнерских решений"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work-img3-desktop.jpg    1x,
+                      ./images/work-img3-desktop@2x.jpg 2x,
+                      ./images/work-img3-desktop@3x.jpg 3x
+                    "
+                    sizes="33.3333vw"
+                  />
+                  <img
+                    class="work__image"
+                    src="./images/work-img3-desktop.jpg"
+                    alt="Илюстрация дизайнерских решений"
+                  />
+                </picture>
                 <p class="work__category">Дизайнерские решения</p>
               </div>
             </li>
@@ -222,11 +246,40 @@
           <!-- Team members list -->
           <ul class="members">
             <li class="members__item">
-              <img
-                class="members__photo"
-                src="./images/igordemianenko.jpg"
-                alt="Фото Игоря Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/demianenko-mobile.jpg    1x,
+                    ./images/demianenko-mobile@2x.jpg 2x,
+                    ./images/demianenko-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/demianenko-tablet.jpg    1x,
+                    ./images/demianenko-tablet@2x.jpg 2x,
+                    ./images/demianenko-tablet@3x.jpg 3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./images/demianenko-desktop.jpg    1x,
+                    ./images/demianenko-desktop@2x.jpg 2x,
+                    ./images/demianenko-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+                <img
+                  class="members__photo"
+                  src="./images/demianenko-mobile.jpg"
+                  alt="Фото Игоря Демьяненко"
+                />
+              </picture>
 
               <div class="members__info">
                 <h3 class="members__name">Игорь Демьяненко</h3>
@@ -236,7 +289,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Instagram" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -244,7 +297,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Twitter" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -252,7 +305,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Facebook" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -260,7 +313,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на LinkedIn" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -269,7 +322,40 @@
             </li>
 
             <li class="members__item">
-              <img class="members__photo" src="./images/olgarepina.jpg" alt="Фото Ольги Репиной" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/repina-mobile.jpg    1x,
+                    ./images/repina-mobile@2x.jpg 2x,
+                    ./images/repina-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/repina-tablet.jpg    1x,
+                    ./images/repina-tablet@2x.jpg 2x,
+                    ./images/repina-tablet@3x.jpg 3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./images/repina-desktop.jpg    1x,
+                    ./images/repina-desktop@2x.jpg 2x,
+                    ./images/repina-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+                <img
+                  class="members__photo"
+                  src="./images/repina-mobile.jpg"
+                  alt="Фото Ольги Репиной"
+                />
+              </picture>
 
               <div class="members__info">
                 <h3 class="members__name">Ольга Репина</h3>
@@ -279,7 +365,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Instagram" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -287,7 +373,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Twitter" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -295,7 +381,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Facebook" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -303,7 +389,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на LinkedIn" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -312,11 +398,40 @@
             </li>
 
             <li class="members__item">
-              <img
-                class="members__photo"
-                src="./images/nikolaitarasov.jpg"
-                alt="Фото Николая Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/tarasov-mobile.jpg    1x,
+                    ./images/tarasov-mobile@2x.jpg 2x,
+                    ./images/tarasov-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/tarasov-tablet.jpg    1x,
+                    ./images/tarasov-tablet@2x.jpg 2x,
+                    ./images/tarasov-tablet@3x.jpg 3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./images/tarasov-desktop.jpg    1x,
+                    ./images/tarasov-desktop@2x.jpg 2x,
+                    ./images/tarasov-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+                <img
+                  class="members__photo"
+                  src="./images/tarasov-mobile.jpg"
+                  alt="Фото Николая Тарасова"
+                />
+              </picture>
 
               <div class="members__info">
                 <h3 class="members__name">Николай Тарасов</h3>
@@ -326,7 +441,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Instagram" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -334,7 +449,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Twitter" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -342,7 +457,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Facebook" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -350,7 +465,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на LinkedIn" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -359,11 +474,40 @@
             </li>
 
             <li class="members__item">
-              <img
-                class="members__photo"
-                src="./images/mikhailermakov.jpg"
-                alt="Фото Михаила Ермакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ermakov-mobile.jpg    1x,
+                    ./images/ermakov-mobile@2x.jpg 2x,
+                    ./images/ermakov-mobile@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <source
+                  srcset="
+                    ./images/ermakov-tablet.jpg    1x,
+                    ./images/ermakov-tablet@2x.jpg 2x,
+                    ./images/ermakov-tablet@3x.jpg 3x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="50vw"
+                />
+                <source
+                  srcset="
+                    ./images/ermakov-desktop.jpg    1x,
+                    ./images/ermakov-desktop@2x.jpg 2x,
+                    ./images/ermakov-desktop@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="25vw"
+                />
+                <img
+                  class="members__photo"
+                  src="./images/ermakov-mobile.jpg"
+                  alt="Фото Михаила Ермакова"
+                />
+              </picture>
 
               <div class="members__info">
                 <h3 class="members__name">Михаил Ермаков</h3>
@@ -373,7 +517,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Instagram" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#instagram"></use>
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -381,7 +525,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Twitter" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#twitter"></use>
+                        <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -389,7 +533,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на Facebook" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#facebook"></use>
+                        <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
@@ -397,7 +541,7 @@
                   <li class="socials__item">
                     <a href="" aria-label="Ссылка на LinkedIn" class="socials__link">
                       <svg class="socials__icon">
-                        <use href="./images/sprite.svg#linkedin"></use>
+                        <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -417,7 +561,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client1"></use>
+                  <use href="./images/icons.svg#Client1"></use>
                 </svg>
               </a>
             </li>
@@ -425,7 +569,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client2"></use>
+                  <use href="./images/icons.svg#Client2"></use>
                 </svg>
               </a>
             </li>
@@ -433,7 +577,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client3"></use>
+                  <use href="./images/icons.svg#Client3"></use>
                 </svg>
               </a>
             </li>
@@ -441,7 +585,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client4"></use>
+                  <use href="./images/icons.svg#Client4"></use>
                 </svg>
               </a>
             </li>
@@ -449,7 +593,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client5"></use>
+                  <use href="./images/icons.svg#Client5"></use>
                 </svg>
               </a>
             </li>
@@ -457,7 +601,7 @@
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
-                  <use href="./images/sprite.svg#Client6"></use>
+                  <use href="./images/icons.svg#Client6"></use>
                 </svg>
               </a>
             </li>
@@ -504,7 +648,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#instagram"></use>
+                    <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -516,7 +660,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#twitter"></use>
+                    <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -528,7 +672,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#facebook"></use>
+                    <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -540,7 +684,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#linkedin"></use>
+                    <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -569,7 +713,7 @@
       <div class="modal">
         <button class="modal__close" data-modal-close>
           <svg class="modal__icon">
-            <use href="./images/sprite.svg#close"></use>
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 

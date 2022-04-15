@@ -921,8 +921,10 @@ img {
   }
 }
 
-.members__photo {
-  width: 100%;
+@media screen and (max-width: 479px) {
+  .members__photo {
+    width: 100%;
+  }
 }
 
 .members__info {
@@ -1332,6 +1334,12 @@ img {
 .projects__img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .projects__img {
+    width: 100%;
+  }
 }
 
 .projects__title {

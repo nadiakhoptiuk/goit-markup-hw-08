@@ -64,7 +64,7 @@
               <li class="contacts__item">
                 <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--email">
                   <svg class="contacts__icon contacts__icon--letter">
-                    <use href="./images/sprite.svg#e-mail"></use>
+                    <use href="./images/icons.svg#e-mail"></use>
                   </svg>
                   info@devstudio.com
                 </a>
@@ -72,7 +72,7 @@
               <li class="contacts__item contacts__item--tel">
                 <a href="tel:+380961111111" class="contacts__link contacts__link--tel">
                   <svg class="contacts__icon contacts__icon--smartphone">
-                    <use href="./images/sprite.svg#smartphone"></use>
+                    <use href="./images/icons.svg#smartphone"></use>
                   </svg>
                   +38 096 111 11 11
                 </a>
@@ -122,13 +122,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/techno.jpg"
-                    alt="Картинка проекта Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-1-mobile.jpg    1x,
+                        ./images/project-1-mobile@2x.jpg 2x,
+                        ./images/project-1-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-tablet.jpg    1x,
+                        ./images/project-1-tablet@2x.jpg 2x,
+                        ./images/project-1-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-desktop.jpg    1x,
+                        ./images/project-1-desktop@2x.jpg 2x,
+                        ./images/project-1-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-1-mobile.jpg"
+                      alt="Картинка проекта Технокряк"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -146,13 +173,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/poster-new-orlean.jpg"
-                    alt="Картинка проекта Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-2-mobile.jpg    1x,
+                        ./images/project-2-mobile@2x.jpg 2x,
+                        ./images/project-2-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-tablet.jpg    1x,
+                        ./images/project-2-tablet@2x.jpg 2x,
+                        ./images/project-2-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-desktop.jpg    1x,
+                        ./images/project-2-desktop@2x.jpg 2x,
+                        ./images/project-2-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-2-mobile.jpg"
+                      alt="Картинка проекта Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -170,13 +224,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/the-sea-food-restaurant.jpg"
-                    alt="Картинка проекта Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-3-mobile.jpg    1x,
+                        ./images/project-3-mobile@2x.jpg 2x,
+                        ./images/project-3-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-tablet.jpg    1x,
+                        ./images/project-3-tablet@2x.jpg 2x,
+                        ./images/project-3-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-desktop.jpg    1x,
+                        ./images/project-3-desktop@2x.jpg 2x,
+                        ./images/project-3-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-3-mobile.jpg"
+                      alt="Картинка проекта Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -194,13 +275,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/project-prime.jpg"
-                    alt="Картинка проекта Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-4-mobile.jpg    1x,
+                        ./images/project-4-mobile@2x.jpg 2x,
+                        ./images/project-4-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-tablet.jpg    1x,
+                        ./images/project-4-tablet@2x.jpg 2x,
+                        ./images/project-4-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-desktop.jpg    1x,
+                        ./images/project-4-desktop@2x.jpg 2x,
+                        ./images/project-4-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-4-mobile.jpg"
+                      alt="Картинка проекта Проект Prime"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -218,13 +326,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/project-boxes.jpg"
-                    alt="Картинка проекта Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-5-mobile.jpg    1x,
+                        ./images/project-5-mobile@2x.jpg 2x,
+                        ./images/project-5-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-tablet.jpg    1x,
+                        ./images/project-5-tablet@2x.jpg 2x,
+                        ./images/project-5-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-desktop.jpg    1x,
+                        ./images/project-5-desktop@2x.jpg 2x,
+                        ./images/project-5-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-5-mobile.jpg"
+                      alt="Картинка проекта Проект Boxes"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -242,13 +377,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="Картинка проекта Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-6-mobile.jpg    1x,
+                        ./images/project-6-mobile@2x.jpg 2x,
+                        ./images/project-6-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-tablet.jpg    1x,
+                        ./images/project-6-tablet@2x.jpg 2x,
+                        ./images/project-6-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-desktop.jpg    1x,
+                        ./images/project-6-desktop@2x.jpg 2x,
+                        ./images/project-6-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-6-mobile.jpg"
+                      alt="Картинка проекта Inspiration has no Borders"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -266,13 +428,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/limited-edition.jpg"
-                    alt="Картинка проекта Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-7-mobile.jpg    1x,
+                        ./images/project-7-mobile@2x.jpg 2x,
+                        ./images/project-7-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-tablet.jpg    1x,
+                        ./images/project-7-tablet@2x.jpg 2x,
+                        ./images/project-7-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-7-desktop.jpg    1x,
+                        ./images/project-7-desktop@2x.jpg 2x,
+                        ./images/project-7-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-7-mobile.jpg"
+                      alt="Картинка проекта Издание Limited Edition"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -290,13 +479,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/project-lab.jpg"
-                    alt="Картинка проекта Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-8-mobile.jpg    1x,
+                        ./images/project-8-mobile@2x.jpg 2x,
+                        ./images/project-8-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-tablet.jpg    1x,
+                        ./images/project-8-tablet@2x.jpg 2x,
+                        ./images/project-8-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-8-desktop.jpg    1x,
+                        ./images/project-8-desktop@2x.jpg 2x,
+                        ./images/project-8-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-8-mobile.jpg"
+                      alt="Картинка проекта Проект LAB"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -314,13 +530,40 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    class="projects__img"
-                    src="./images/growing-bussiness.jpg"
-                    alt="Картинка проекта Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-9-mobile.jpg    1x,
+                        ./images/project-9-mobile@2x.jpg 2x,
+                        ./images/project-9-mobile@3x.jpg 3x
+                      "
+                      media="(max-width: 767px)"
+                      sizes="100vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-tablet.jpg    1x,
+                        ./images/project-9-tablet@2x.jpg 2x,
+                        ./images/project-9-tablet@3x.jpg 3x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="50vw"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-desktop.jpg    1x,
+                        ./images/project-9-desktop@2x.jpg 2x,
+                        ./images/project-9-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                      sizes="33.3333vw"
+                    />
+                    <img
+                      class="projects__img"
+                      src="./images/project-9-mobile.jpg"
+                      alt="Картинка проекта Growing Business"
+                    />
+                  </picture>
                   <p class="hidden-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -377,7 +620,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#instagram"></use>
+                    <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -389,7 +632,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#twitter"></use>
+                    <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -401,7 +644,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#facebook"></use>
+                    <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -413,7 +656,7 @@
                   class="socials__link socials__link--footer"
                 >
                   <svg class="socials__icon socials__icon--footer">
-                    <use href="./images/sprite.svg#linkedin"></use>
+                    <use href="./images/icons.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
