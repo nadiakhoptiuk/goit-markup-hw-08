@@ -704,12 +704,14 @@ img {
 @media screen and (min-width: 480px) {
   .hero-section {
     width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
     width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
   }
 }
@@ -730,7 +732,6 @@ img {
   .hero-section {
     width: 100%;
     max-width: 1600px;
-    height: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop.jpg");
