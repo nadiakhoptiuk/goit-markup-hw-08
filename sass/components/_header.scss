@@ -3,27 +3,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
 
   border-bottom: 1px solid $primaryBorderColor;
   background-color: $primaryBgdColor;
-
+  // for mobile
   @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
-}
-
-.mobile-header-container {
   display: flex;
   align-items: center;
 }

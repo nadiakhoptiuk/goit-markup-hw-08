@@ -1,38 +1,42 @@
-/* Styles for visible modal */
-
+// Styles for visible modal
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 20;
   padding: 40px;
-
-  @media screen and (max-width: 479px) {
-    width: calc(100% - 30px);
-    min-height: 609px;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 450px;
-    height: 609px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 581px;
-    width: 528px;
-  }
+  z-index: 10;
 
   background-color: $primaryBgdColor;
   border-radius: $borderRadius;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  opacity: 1;
 
   transform: translate(-50%, -50%) scale(1);
 
   @include transitioned(transform);
 
-  /* Styles for hidden modal */
+  // for mobile phone (responsible)
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
+    min-height: 609px;
+  }
+  // for mobile phone in landscape mode
+  @media screen and (max-width: 850px) and (orientation: landscape) {
+    position: absolute;
+    top: 95%;
+  }
+  // for tablet
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+  // for desktop
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  //  Styles for hidden modal
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
   }
@@ -47,13 +51,14 @@
   letter-spacing: inherit;
   color: $primaryTextColor;
 
-  @media screen and (max-width: 767px) {
+  // for mobile and tablet
+  @media screen and (max-width: 1199px) {
     font-size: 20px;
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
+  // for desktop
+  @media screen and (min-width: 1200px) {
     line-height: 1.15;
   }
 }
@@ -62,10 +67,9 @@
   position: absolute;
   top: 8px;
   right: 8px;
-
+  @include centeredFlex;
   width: 32px;
   height: 32px;
-  @include centeredFlex;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;

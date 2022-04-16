@@ -1,45 +1,52 @@
-@media screen and (max-width: 767px) {
-  .menu-btn {
-    margin-left: auto;
-    padding: 0;
+// visible only on the mobile screen
+.menu-btn {
+  @include centeredFlex;
+  margin-left: auto;
+  padding: 0;
 
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
-    @include centeredFlex;
-
-    &.is-open {
-      position: relative;
-      z-index: 2;
-    }
+  &.is-open {
+    position: relative;
+    z-index: 2;
   }
-
-  .menu-btn__icon--cross {
-    display: none;
-
-    .menu-btn.is-open & {
-      display: block;
-    }
-  }
-
-  .menu-btn.is-open .menu-btn__icon--menu {
+  // for tablet and desktop
+  @media screen and (min-width: 768px) {
     display: none;
   }
+}
 
-  .menu-btn__icon--cross,
-  .menu-btn__icon--menu {
-    fill: $textColorLogoHeader;
+// for tablet and desktop button is hidden, so icons are hidden too
+.menu-btn__icon {
+  fill: $textColorLogoHeader;
+  @include transitioned(fill);
 
-    @include transitioned(fill);
-
-    .menu-btn:hover &,
-    .menu-btn:focus & {
-      fill: $accentColor;
-    }
+  .menu-btn:hover &,
+  .menu-btn:focus & {
+    fill: $accentColor;
   }
+}
 
-  .menu-container {
+// when menu is closed (default), icon menu is visible, icon cross is hidden
+.menu-btn__icon--cross {
+  display: none;
+
+  .menu-btn.is-open & {
+    display: block;
+  }
+}
+
+// when menu is open, icon menu is hidden, icon cross is visible
+.menu-btn.is-open .menu-btn__icon--menu {
+  display: none;
+}
+
+// default - menu-container is hidden
+.menu-container {
+  // is dropdown only for mobile
+  @media screen and (max-width: 767px) {
     display: none;
     position: fixed;
     top: 0;
@@ -50,54 +57,46 @@
 
     background-color: $primaryBgdColor;
     padding: 48px 40px;
-
+    // menu-container is visible
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
   }
-
-  // company socials
-  .company-socials {
-    display: flex;
-    margin-top: 64px;
-    margin-left: -10px;
-
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: $accentColor;
-  }
-
-  .company-socials__item {
-    padding-left: 10px;
-    padding-right: 10px;
-
-    &:not(:last-child) {
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-  }
-}
-
-// for tablet and desktop
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-
-  .menu-container {
-    position: static;
+  // for tablet and desktop is static and flex
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-grow: 1;
   }
+}
 
-  .company-socials {
+// company socials are visible only on the mobile screen
+.company-socials {
+  display: flex;
+  margin-top: 64px;
+  margin-left: -10px;
+
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accentColor;
+  // for tablet and desktop - are hidden
+  @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+
+.company-socials__item {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

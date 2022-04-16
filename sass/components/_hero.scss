@@ -1,4 +1,5 @@
 .hero-section {
+  // for mobile - responsible
   width: 100%;
   max-width: 479px;
   height: auto;
@@ -22,11 +23,13 @@
       url('../images/hero-mobile@3x.jpg');
   }
 
+  // from width 480px - adaptive
   @media screen and (min-width: 480px) {
     width: 480px;
     max-width: 480px;
   }
 
+  // for tablet
   @media screen and (min-width: 768px) {
     width: 768px;
     max-width: 768px;
@@ -46,6 +49,7 @@
     }
   }
 
+  // for desktop - responsible (from 1200px to 1600px), more than 1600px - adaptive
   @media screen and (min-width: 1200px) {
     width: 100%;
     max-width: 1600px;
@@ -79,6 +83,7 @@
   text-transform: uppercase;
   color: $lightTextColor;
 
+  // for desktop
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;

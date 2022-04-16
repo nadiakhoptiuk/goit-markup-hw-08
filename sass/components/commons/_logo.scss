@@ -4,6 +4,10 @@
   font-size: 24px;
   line-height: 1.17;
 
+  &__part {
+    color: $accentColor;
+  }
+  // for desktop
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
@@ -12,20 +16,20 @@
 
 .header__logo {
   color: $textColorLogoHeader;
-
+  // for tablet
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
-}
-
-.logo__part {
-  color: $accentColor;
+  // for desktop
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 // footer logo
 .footer__logo {
   display: inline-block;
-  color: $lightTextColor;
-
   margin-bottom: 20px;
+
+  color: $lightTextColor;
 }

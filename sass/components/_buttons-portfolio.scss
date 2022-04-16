@@ -1,34 +1,35 @@
+// buttons list
 .buttons {
   @extend %list;
-
+  // for mobile
   @media screen and (max-width: 767px) {
     margin-top: -15px;
     margin-bottom: 40px;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
   }
-
+  // for tablet
   @media screen and (min-width: 768px) {
     @include centeredFlex;
     margin-bottom: 30px;
   }
-
+  // for desktop
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
 
 .buttons__item {
-  @media screen and (max-width: 767px) {
-    margin-top: 15px;
-  }
-
   &:not(:last-child) {
     margin-right: 8px;
   }
+  // for mobile
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
 }
 
+// styles of button on this page
 .portfolio-button {
   padding: 6px 22px;
 
@@ -38,11 +39,11 @@
   line-height: 1.62;
   text-align: center;
 
-  cursor: pointer;
   border: none;
   border-radius: $borderRadius;
   color: $primaryTextColor;
   background-color: $specialBgdColor;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

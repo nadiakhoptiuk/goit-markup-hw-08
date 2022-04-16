@@ -9,23 +9,25 @@
 
 // members list
 .members {
-  @extend %list;
   display: flex;
   flex-wrap: wrap;
+  @extend %list;
   margin: -15px;
 }
 
 .members__item {
+  width: calc(100% - 30px);
   margin: 15px;
 
   background-color: $primaryBgdColor;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  // for tablet
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px - 30px) / 2);
   }
+  // for desktop
   @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * 30px - 30px) / 4);
   }
@@ -41,19 +43,24 @@
   padding-top: 30px;
   padding-bottom: 24px;
 
+  font-size: 16px;
+  line-height: 1.19;
+
   text-align: center;
+  // for desktop
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .members__name {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
 }
 
 .members__proffession {
-  font-size: 16px;
-  line-height: 1.19;
   margin-bottom: 16px;
   color: $secondaryTextColor;
 }

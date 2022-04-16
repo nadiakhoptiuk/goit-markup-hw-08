@@ -22,13 +22,17 @@ img {
 }
 
 .page {
-  padding-top: 72px;
+  padding-top: 80px;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
 
   background-color: $primaryBgdColor;
   color: $primaryTextColor;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
 }
 
 .page.modal-open,

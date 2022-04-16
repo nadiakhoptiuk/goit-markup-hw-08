@@ -9,19 +9,19 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-
   @extend %list;
+  margin: -15px;
 }
 
 .clients__item {
-  width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
 
+  // for tablet
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px - 30px) / 3);
   }
-
+  // for desktop
   @media screen and (min-width: 1200px) {
     width: calc((100% - 5 * 30px - 30px) / 6);
   }
