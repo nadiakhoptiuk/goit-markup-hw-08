@@ -1,12 +1,11 @@
 .address-wrapper {
   text-align: center;
-  width: 232px;
-
+  // for mobile
   @media screen and (max-width: 767px) {
     margin: 0 auto;
     margin-bottom: 60px;
   }
-
+  // for desktop
   @media screen and (min-width: 1200px) {
     text-align: left;
     margin-right: 70px;

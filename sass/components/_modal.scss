@@ -20,11 +20,11 @@
     width: calc(100% - 30px);
     min-height: 609px;
   }
-  // for mobile phone in landscape mode
-  @media screen and (max-width: 850px) and (orientation: landscape) {
-    position: absolute;
-    top: 95%;
-  }
+  // // for mobile phone in landscape mode
+  // @media screen and (max-width: 850px) and (orientation: landscape) {
+  //   position: absolute;
+  //   top: 95%;
+  // }
   // for tablet
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
@@ -56,7 +56,6 @@
     font-size: 20px;
     line-height: 1.5;
   }
-
   // for desktop
   @media screen and (min-width: 1200px) {
     line-height: 1.15;

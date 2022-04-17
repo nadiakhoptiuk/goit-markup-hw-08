@@ -1,4 +1,10 @@
 .subscribe {
+  // for tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  // for desktop
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
@@ -14,16 +20,14 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $lightTextColor;
-
+  // for desktop
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }
 
 .subcribe__form {
-  @include centeredFlex;
-  flex-wrap: wrap;
-
+  // for desktop
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: flex-start;
@@ -33,9 +37,9 @@
 
 .subscribe__input {
   display: block;
-  width: 450px;
   height: 50px;
   padding: 15px 16px;
+  margin: 0 auto;
   margin-bottom: 20px;
 
   font-size: 16px;
@@ -48,24 +52,32 @@
   border-width: 1px;
   border-color: $footerInputBorderColor;
 
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-    margin-right: 12px;
-    margin-bottom: 0;
-  }
-
   @include transitioned(border-color);
 
   &:focus {
     border-color: $accentColor;
     outline: none;
   }
-
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: inherit;
     color: $contactsTextColorFooter;
+  }
+  // for mobile - responsible
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    max-width: 450px;
+  }
+  // for mobile and tablet -adaptive
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  // for desktop
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
