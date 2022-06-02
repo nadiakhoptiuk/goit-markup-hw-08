@@ -18,6 +18,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <script id="text-template" type="text/x-handlebars-template">
+      <li class='projects__item'>
+        <a href='' class='projects__link'>
+          <div class='projects__thumb'>
+            <picture>
+              <source
+                srcset='
+            {{mobile1x}} 1x,
+            {{mobile2x}} 2x,
+            {{mobile3x}} 3x
+          '
+                media='(max-width: 767px)'
+              />
+              <source
+                srcset='
+            {{tablet1x}} 1x,
+            {{tablet2x}} 2x,
+            {{tablet3x}} 3x
+          '
+                media='(min-width: 768px) and (max-width: 1199px)'
+              />
+              <source
+                srcset='
+            {{desktop1x}} 1x,
+            {{desktop2x}} 2x,
+            {{desktop3x}} 3x
+          '
+                media='(min-width: 1200px)'
+              />
+              <img class='projects__img' src='{{mobile1x}}' alt='{{alt}}' />
+            </picture>
+            <p class='hidden-text'>
+              {{desc}}
+            </p>
+          </div>
+
+          <div class='projects__info'>
+            <h2 class='projects__title'>{{title}}</h2>
+            <p class='projects__category'>{{type}}</p>
+          </div>
+        </a>
+      </li>
+    </script>
   </head>
 
   <body class="page">
@@ -653,6 +696,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="./js/filter-portfolio.js" type="module"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
   </body>
