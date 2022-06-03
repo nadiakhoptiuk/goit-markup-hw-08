@@ -46,27 +46,31 @@ function removeActiveClassFromPrevButton() {
 
 // create html markup and add it to DOM
 function createPortfolioItemMarkup(array) {
-  const markup = array
-    .map(portfolio => {
-      const {
-        desc,
-        title,
-        mobile1x,
-        mobile2x,
-        mobile3x,
-        tablet1x,
-        tablet2x,
-        tablet3x,
-        desktop1x,
-        desktop2x,
-        desktop3x,
-        type,
-        alt,
-      } = portfolio;
-      // call function template for every object
-      return template(portfolio);
-    })
-    .join('');
+  // for every object of portfolio array we have to call loop:
+  // const markup = array
+  //   .map(portfolio => {
+  //     const {
+  //       desc,
+  //       title,
+  //       mobile1x,
+  //       mobile2x,
+  //       mobile3x,
+  //       tablet1x,
+  //       tablet2x,
+  //       tablet3x,
+  //       desktop1x,
+  //       desktop2x,
+  //       desktop3x,
+  //       type,
+  //       alt,
+  //     } = portfolio;
+  //     // call function template for every object
+  //     return template(portfolio);
+  //   })
+  //   .join('');
+
+  // we can call function template for all portfolio array just one time:
+  const markup = template(array);
 
   refs.projects.innerHTML = '';
   refs.projects.insertAdjacentHTML('beforeend', markup);
